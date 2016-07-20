@@ -11,6 +11,7 @@
         "jsx": "preserve"
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "Test Electron App-win32-x64"
     ]
 }

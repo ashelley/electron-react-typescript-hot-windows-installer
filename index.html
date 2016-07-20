@@ -12,14 +12,19 @@
     </div>
     <script>
       (function() {
-        /*
+
+        console.log(process.env.NODE_ENV)
+        console.log(process.env.ENV)
+
         const script = document.createElement('script');
         script.src = process.env.ENV === 'development' ? 'http://localhost:9000/dist/bundle.js' : './dist/bundle.js';
         document.write(script.outerHTML);
-        */
-        const script = document.createElement('script');
-        script.src = 'http://localhost:9000/dist/bundle.js';       
-        document.write(script.outerHTML); 
+
+        /*
+          const script = document.createElement('script');
+          script.src = 'http://localhost:9000/dist/bundle.js';       
+          document.write(script.outerHTML);
+        */ 
       }());
     </script>
 </html>

@@ -8,14 +8,17 @@ var config = {
     'index.tsx',
   ],
   module: {
-    loaders: [{
+    loaders: [/*{
       test: /\.jsx?$/,
       loaders: ['babel-loader'],
       exclude: /node_modules/
-    }, {
+    }, */{
       test: /\.tsx?$/,
       loaders: ['babel', 'ts-loader'],
-      exclude: /node_modules/
+      exclude: [
+        /node_modules/,
+        /Test Electron App-win32-x64/
+      ]
     }, {
       test: /\.css$/,
       loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'
